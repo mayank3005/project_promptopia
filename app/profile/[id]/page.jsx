@@ -24,13 +24,11 @@ const UserProfile = ({ params }) => {
   }, [params?.id]);
 
   return (
-    <Suspense>
-      <Profile
-        name={userName}
-        desc="Welcome to your personalized profile"
-        data={posts}
-      />
-    </Suspense>
+    <Profile
+      name={userName}
+      desc="Welcome to your personalized profile"
+      data={posts}
+    />
   );
 };
 
